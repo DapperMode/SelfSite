@@ -23,15 +23,32 @@ textarea {
     max-width: 280px;
 }
 
-.jumbotron-nobg{
+.jumbotron-nobg {
     background-color: transparent;
 }
 
-.body-vh{
-    min-height: 91vh;
+.body-vh {
+    min-height: 100vh;
+    background-color:white;
+
+    border-radius:1%;
 }
 
-.img-linebreak{
+.body-vh:hover{
+    animation-name:body-hover;
+    animation-duration: 3s;
+}
+
+body{
+    padding-top:10px;
+    background-color:#e0e0e0;
+}
+.img-linebreak {
     width:100%;
     max-height: 5px;
+}
+
+@keyframes body-hover {
+    from {background-color:initial}
+    to{background-color: black}
 }
